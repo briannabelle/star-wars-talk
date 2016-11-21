@@ -1,11 +1,15 @@
-<div class="form-control">
-    <label for="name">Character Name: </label>
-    {{input value=model.name id="name"}}
-</div>
+<div class="add-character">
 
-<div class="form-control">
-    <label for="image">Character Image: </label>
-    {{input value=model.image id="image"}}
-</div>
+	<div class="form-control">
+	    <label for="name">Character Name: </label>
+	    {{input value=model.name id="name"}}
+	</div>
+	
+	<div class="form-control">
+	    <label for="image">Character Image: </label>
+	    {{input value=model.image id="image"}}
+	</div>
+	
+	<button {{action "save" model}}>Add Character</button>
 
-<button {{action "save" model}}>Add Character</button>
+</div>
